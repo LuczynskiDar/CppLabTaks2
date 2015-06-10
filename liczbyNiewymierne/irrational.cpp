@@ -21,6 +21,10 @@ IRrational operator- (const IRrational& afrac, const IRrational& bfrac){
     IRrational temp;
     temp.x=afrac.x-bfrac.x;
     temp.y=afrac.y;
+    //Najprostsza postac
+//    int res=divFunc(temp.x,temp.y);
+//    temp.x=temp.x/temp.y*res;
+//    temp.y=res;
     return temp;
 }
 
@@ -28,13 +32,10 @@ IRrational operator* (const IRrational& afrac, const IRrational& bfrac){
     IRrational temp;
     temp.x=afrac.x*bfrac.x;
     temp.y=afrac.y*bfrac.y;
-    return temp;
-}
-
-IRrational operator* (const IRrational& afrac, const IRrational& bfrac){
-    IRrational temp;
-    temp.x=afrac.x*bfrac.x;
-    temp.y=afrac.y*bfrac.y;
+    //Najprostsza postac
+//    int res=divFunc(temp.x,temp.y);
+//    temp.x=temp.x/temp.y*res;
+//    temp.y=res;
     return temp;
 }
 
@@ -45,6 +46,5 @@ IRrational operator/ (const IRrational& afrac, const IRrational& bfrac){
     return temp;
 }
 
-void toSimForm(){
 
-}
+
